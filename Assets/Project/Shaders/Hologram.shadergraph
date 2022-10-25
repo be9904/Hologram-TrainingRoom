@@ -834,8 +834,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1225.0001220703125,
-            "y": 1111.0,
+            "x": -1341.0,
+            "y": 1204.0,
             "width": 145.0,
             "height": 136.0
         }
@@ -1632,10 +1632,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1208.0001220703125,
-            "y": 1262.0,
+            "x": -1324.0,
+            "y": 1355.0,
             "width": 128.0,
-            "height": 94.0001220703125
+            "height": 94.0
         }
     },
     "m_Slots": [
@@ -2162,7 +2162,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -2207,7 +2207,7 @@
         "plus"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -2807,8 +2807,8 @@
     "m_ObjectId": "a57f81ff74714414bc63f3d904d41d60",
     "m_Title": "Flicker",
     "m_Position": {
-        "x": -1532.0001220703125,
-        "y": 1052.0
+        "x": -1648.0,
+        "y": 1145.0
     }
 }
 
@@ -3373,10 +3373,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1507.0001220703125,
-            "y": 1111.0,
-            "width": 208.0,
-            "height": 326.0
+            "x": -1623.0,
+            "y": 1204.0,
+            "width": 147.0,
+            "height": 142.0
         }
     },
     "m_Slots": [
@@ -3497,10 +3497,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1238.0001220703125,
-            "y": 1375.0,
+            "x": -1354.0,
+            "y": 1468.0,
             "width": 158.0,
-            "height": 34.0
+            "height": 34.0001220703125
         }
     },
     "m_Slots": [
@@ -3858,10 +3858,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -916.0000610351563,
-            "y": 1112.0,
-            "width": 208.0,
-            "height": 326.0
+            "x": -1032.0,
+            "y": 1205.0001220703125,
+            "width": 170.00006103515626,
+            "height": 141.9998779296875
         }
     },
     "m_Slots": [
