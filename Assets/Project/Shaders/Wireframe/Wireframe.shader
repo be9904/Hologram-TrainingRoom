@@ -59,7 +59,7 @@ Shader "Custom/Wireframe" {
 				"LightMode" = "UniversalForward"
 			}
 			Blend [_SrcBlend] [_DstBlend]
-			ZWrite [_ZWrite]
+			ZWrite On
 
 			HLSLPROGRAM
 
