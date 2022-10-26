@@ -65,6 +65,6 @@ Material:
     - _FresnelColor: {r: 11.984314, g: 11.984314, b: 11.984314, a: 0}
     - _HologramTiling: {r: 32, g: 32, b: 0, a: 0}
     - _MainColor: {r: 1, g: 1, b: 1, a: 0}
-    - _ScanLineColor: {r: 15.937255, g: 4.7686276, b: 0, a: 0}
+    - _ScanLineColor: {r: 95.87451, g: 29.113726, b: 0, a: 0}
     - _ScanLine_Tiling: {r: 1, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
