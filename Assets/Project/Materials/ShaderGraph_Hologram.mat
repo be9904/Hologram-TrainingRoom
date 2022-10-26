@@ -59,7 +59,7 @@ Material:
     - _FresnelPower: 3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _ScanSpeed: 0.2
+    - _ScanSpeed: 0.5
     - _ScrollSpeed: 0.05
     m_Colors:
     - _FresnelColor: {r: 11.984314, g: 11.984314, b: 11.984314, a: 0}
