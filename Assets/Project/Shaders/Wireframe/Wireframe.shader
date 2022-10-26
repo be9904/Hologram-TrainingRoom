@@ -133,7 +133,7 @@ Shader "Custom/Wireframe" {
 			ENDHLSL
 		}
 
-		Pass {
+		/*Pass {
 			Tags {
 				"LightMode" = "ShadowCaster"
 			}
@@ -158,7 +158,7 @@ Shader "Custom/Wireframe" {
 			#include "Shadows.hlsl"
 
 			ENDHLSL
-		}
+		}*/
 
 		Pass {
 			Tags {
