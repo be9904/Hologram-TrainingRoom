@@ -400,7 +400,7 @@ FragmentOutput MyFragmentProgram (Interpolators i) {
 	#if defined(LOD_FADE_CROSSFADE)
 		UnityApplyDitherCrossFade(i.vpos);
 	#endif
-
+	
 	ApplyParallax(i);
 
 	float alpha = GetAlpha(i);

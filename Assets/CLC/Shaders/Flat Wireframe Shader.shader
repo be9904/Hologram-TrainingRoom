@@ -216,6 +216,4 @@
 			ENDCG
 		}
 	}
-
-	CustomEditor "MyLightingShaderGUI"
 }

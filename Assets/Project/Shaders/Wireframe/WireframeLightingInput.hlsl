@@ -41,7 +41,7 @@ float _Metallic;
 float _Smoothness;
 
 sampler2D _ParallaxMap;
-float _ParallaxStrength;
+float _ParallaxStrength, _ParallaxMode;
 
 sampler2D _OcclusionMap;
 float _OcclusionStrength;

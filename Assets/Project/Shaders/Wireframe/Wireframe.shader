@@ -13,6 +13,7 @@ Shader "Custom/Wireframe" {
 
 		[NoScaleOffset] _ParallaxMap ("Parallax", 2D) = "black" {}
 		_ParallaxStrength ("Parallax Strength", Range(0, 0.1)) = 0
+		[Enum(Off 0, On 1)] _ParallaxMode("Parallax Mode", Float) = 0
 
 		[NoScaleOffset] _OcclusionMap ("Occlusion", 2D) = "white" {}
 		_OcclusionStrength ("Occlusion Strength", Range(0, 1)) = 1
@@ -27,7 +28,7 @@ Shader "Custom/Wireframe" {
 
 		_Cutoff ("Alpha Cutoff", Range(0, 1)) = 0.5
 
-		_WireframeColor ("Wireframe Color", Color) = (0, 0, 0)
+		[HDR]_WireframeColor ("Wireframe Color", Color) = (0, 0, 0)
 		_WireframeSmoothing ("Wireframe Smoothing", Range(0, 10)) = 1
 		_WireframeThickness ("Wireframe Thickness", Range(0, 10)) = 1
 
@@ -52,7 +53,7 @@ Shader "Custom/Wireframe" {
 	ENDHLSL
 
 	SubShader {
-
+		Tags { "RenderPipeline"="UniversalPipeline" }
 		Pass {
 			Tags {
 				"LightMode" = "UniversalForward"
@@ -66,6 +67,7 @@ Shader "Custom/Wireframe" {
 
 			#pragma shader_feature _ _RENDERING_CUTOUT _RENDERING_FADE _RENDERING_TRANSPARENT
 			#pragma shader_feature _METALLIC_MAP
+			#pragma shader_feature _PARALLAX_OFF _PARALLAX_ON
 			#pragma shader_feature _ _SMOOTHNESS_ALBEDO _SMOOTHNESS_METALLIC
 			#pragma shader_feature _NORMAL_MAP
 			#pragma shader_feature _PARALLAX_MAP

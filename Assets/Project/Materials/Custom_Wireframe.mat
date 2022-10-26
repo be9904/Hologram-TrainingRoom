@@ -9,13 +9,16 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Custom_Wireframe
   m_Shader: {fileID: 4800000, guid: 31c11547dea18e34a8e380f02985c1f2, type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _PARALLAX_ON
+  - _RENDERING_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -61,17 +64,19 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailBumpScale: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _Metallic: 0
     - _OcclusionStrength: 1
+    - _Parallax: 0
+    - _ParallaxMode: 0
     - _ParallaxStrength: 0
     - _Smoothness: 0.1
     - _SrcBlend: 1
-    - _WireframeSmoothing: 1
-    - _WireframeThickness: 1
-    - _ZWrite: 1
+    - _WireframeSmoothing: 0.15
+    - _WireframeThickness: 0.43
+    - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 1}
-    - _WireframeColor: {r: 0, g: 0, b: 0, a: 1}
+    - _WireframeColor: {r: 191.74902, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
