@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7680199410768968215
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,11 +20,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_Hologram
-  m_Shader: {fileID: 4800000, guid: 7ec53b9cd55d29841b22ce0c5a21c889, type: 3}
+  m_Name: ShaderGraph_Hologram
+  m_Shader: {fileID: -6465566751694194690, guid: c68bba3bef7a30643a6e98202c5d3409, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -22,6 +35,10 @@ Material:
     m_TexEnvs:
     - _HologramScanlines:
         m_Texture: {fileID: 2800000, guid: b489c4b6d0ac3674b9f8145198d29d99, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ScanLine:
+        m_Texture: {fileID: 2800000, guid: b96386465c6817349aa1fba9122d3951, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -42,9 +59,12 @@ Material:
     - _FresnelPower: 3
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ScanSpeed: 0.5
     - _ScrollSpeed: 0.05
     m_Colors:
-    - _FresnelColor: {r: 4, g: 4, b: 4, a: 0}
+    - _FresnelColor: {r: 11.984314, g: 11.984314, b: 11.984314, a: 0}
     - _HologramTiling: {r: 32, g: 32, b: 0, a: 0}
-    - _MainColor: {r: 2, g: 2, b: 2, a: 0}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 0}
+    - _ScanLineColor: {r: 95.87451, g: 29.113726, b: 0, a: 0}
+    - _ScanLine_Tiling: {r: 1, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
