@@ -37,7 +37,15 @@ Material:
         m_Texture: {fileID: 2800000, guid: b489c4b6d0ac3674b9f8145198d29d99, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _HologramTexture:
+        m_Texture: {fileID: 2800000, guid: b489c4b6d0ac3674b9f8145198d29d99, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ScanLine:
+        m_Texture: {fileID: 2800000, guid: b96386465c6817349aa1fba9122d3951, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ScanlineTexture:
         m_Texture: {fileID: 2800000, guid: b96386465c6817349aa1fba9122d3951, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -59,12 +67,18 @@ Material:
     - _FresnelPower: 3
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _RimLightPower: 4
     - _ScanSpeed: 0.5
+    - _ScanlineCoordinates: 0
+    - _Scanline_Coordinates: 0
     - _ScrollSpeed: 0.05
     m_Colors:
     - _FresnelColor: {r: 11.984314, g: 11.984314, b: 11.984314, a: 0}
     - _HologramTiling: {r: 32, g: 32, b: 0, a: 0}
     - _MainColor: {r: 1, g: 1, b: 1, a: 0}
+    - _RimLightColor: {r: 4, g: 4, b: 4, a: 0}
     - _ScanLineColor: {r: 95.87451, g: 29.113726, b: 0, a: 0}
     - _ScanLine_Tiling: {r: 1, g: 0.5, b: 0, a: 0}
+    - _ScanlineColor: {r: 23.968628, g: 7.152941, b: 0, a: 0}
+    - _ScanlineTiling: {r: 1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []

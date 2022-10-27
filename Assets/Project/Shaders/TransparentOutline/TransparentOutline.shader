@@ -1,58 +1,122 @@
 Shader "Custom/TransparentOutline"
 {
-    Properties
-    {
-        _MainTex ("Texture", 2D) = "white" {}
-    }
-    SubShader
-    {
-        Tags { "RenderType"="Opaque" }
-        LOD 100
+    Properties {
+		_Color ("Main Color", Color) = (.5,.5,.5,1)
+		_OutlineColor ("Outline Color", Color) = (0,0,0,1)
+		_Outline ("Outline width", Range (0.0, 0.15)) = .005
+		_OutlineOffset ("Outline Offset", Vector) = (0, 0, 0)
+		_MainTex ("Base (RGB)", 2D) = "white" { }
+		_Alpha ("Alpha", Float) = 1
+	}
+ 
+	HLSLINCLUDE
+		#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+		 
+		struct appdata {
+			half4 vertex : POSITION;
+			half3 normal : NORMAL;
+			half2 texcoord : TEXCOORD0;
+		};
+		 
+		struct v2f {
+			half4 pos : SV_POSITION;
+			half2 uv : TEXCOORD0;
+			half3 normalDir : NORMAL;
+		};
+		 
+		uniform half4 _Color;
+		uniform half _Outline;
+		uniform half4 _OutlineColor;
+		float _Alpha;
+		 
+	ENDHLSL
+ 
+	SubShader {
+		Tags { 
+			"RenderPipeline"="UniversalPipeline"
+			"RenderType"="TransparentCutout"
+			"Queue" = "AlphaTest"
+		}
+		
+		Pass {
+			Name "OUTLINE"
+			Tags { "LightMode" = "SRPDefaultUnlit" }
+			Cull Front
+			
+			Stencil {
+                Ref 2
+                /*Comp Always
+				Pass Replace
+				Fail Keep
+				ZFail Replace*/
+			}
 
-        Pass
-        {
-            CGPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
-            // make fog work
-            #pragma multi_compile_fog
-
-            #include "UnityCG.cginc"
-
-            struct appdata
-            {
-                float4 vertex : POSITION;
-                float2 uv : TEXCOORD0;
-            };
-
-            struct v2f
-            {
-                float2 uv : TEXCOORD0;
-                UNITY_FOG_COORDS(1)
-                float4 vertex : SV_POSITION;
-            };
-
-            sampler2D _MainTex;
-            float4 _MainTex_ST;
-
-            v2f vert (appdata v)
-            {
-                v2f o;
-                o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-                UNITY_TRANSFER_FOG(o,o.vertex);
-                return o;
+			HLSLPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+			
+			half3 _OutlineOffset;
+			
+			v2f vert(appdata v) {
+				v2f o;
+				
+				half3 vertex = v.vertex.xyz;
+				vertex -= _OutlineOffset;
+				vertex.x *= _Outline+1;
+				vertex.y *= _Outline+1;
+				vertex.z *= _Outline+1;	
+				vertex += _OutlineOffset;
+				o.pos = TransformObjectToHClip(vertex);
+				o.uv = v.texcoord;
+				o.normalDir = TransformObjectToWorldNormal(v.normal);
+			 
+				return o;
+			}
+			
+			half4 frag(v2f i) : SV_Target {
+				return _OutlineColor;
+			}
+			ENDHLSL
+		}
+ 
+ 		Pass {
+			Name "STENCIL"
+ 			Tags {"LightMode"="UniversalForward"}
+			
+ 			Blend SrcAlpha OneMinusSrcAlpha
+ 			
+			Stencil {
+                Ref 1
+				/*Comp Never
+				Pass Replace
+				Fail Keep
+				ZFail Replace*/
             }
+			
+			HLSLPROGRAM
 
-            fixed4 frag (v2f i) : SV_Target
-            {
-                // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv);
-                // apply fog
-                UNITY_APPLY_FOG(i.fogCoord, col);
-                return col;
-            }
-            ENDCG
-        }
-    }
+			#pragma vertex vert2
+			#pragma fragment frag
+						
+			v2f vert2 (appdata v)
+			{
+				v2f o;
+				o.pos = TransformObjectToHClip(v.vertex.xyz);
+				o.uv = v.texcoord;
+				o.normalDir = TransformObjectToWorldNormal(v.normal);
+		
+				return o;
+			}
+			
+			half4 frag (v2f i) : SV_Target
+			{
+				half4 color = half4(1,0,0,0);
+				return color;
+			}
+			
+			ENDHLSL
+
+
+		}
+	}
 }
