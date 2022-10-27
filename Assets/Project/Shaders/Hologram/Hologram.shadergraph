@@ -31,9 +31,6 @@
             "m_Id": "0fdd2b5fc4cc4c7ab0ad7adc6dca5147"
         },
         {
-            "m_Id": "d5e252ca70e748fbbdc47d7d5c84a361"
-        },
-        {
             "m_Id": "1088e98390c04bbb90d9ce218365cdcc"
         },
         {
@@ -1030,10 +1027,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2157.33349609375,
-            "y": 124.00001525878906,
+            "x": -2156.666748046875,
+            "y": 92.66667938232422,
             "width": 187.333251953125,
-            "height": 36.00001525878906
+            "height": 35.999977111816409
         }
     },
     "m_Slots": [
@@ -2437,8 +2434,8 @@
     "m_Value": 0.0,
     "m_FloatType": 1,
     "m_RangeValues": {
-        "x": -100.0,
-        "y": 100.0
+        "x": -10.0,
+        "y": 10.0
     }
 }
 
@@ -3404,7 +3401,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_Space": 0,
+    "m_Space": 2,
     "m_PositionSource": 0
 }
 
@@ -4810,9 +4807,6 @@
             "m_Id": "0fdd2b5fc4cc4c7ab0ad7adc6dca5147"
         },
         {
-            "m_Id": "d5e252ca70e748fbbdc47d7d5c84a361"
-        },
-        {
             "m_Id": "1088e98390c04bbb90d9ce218365cdcc"
         },
         {
@@ -5146,33 +5140,6 @@
     "m_ShaderOutputName": "Sampler",
     "m_StageCapability": 3,
     "m_BareResource": false
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty",
-    "m_ObjectId": "d5e252ca70e748fbbdc47d7d5c84a361",
-    "m_Guid": {
-        "m_GuidSerialized": "d7515bc4-eb55-44a9-92ed-0b5d8bb8e289"
-    },
-    "m_Name": "Scanline Tiling",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Scanline Tiling",
-    "m_DefaultReferenceName": "_Scanline_Tiling",
-    "m_OverrideReferenceName": "_ScanlineTiling",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "x": 1.0,
-        "y": 0.5,
-        "z": 0.0,
-        "w": 0.0
-    }
 }
 
 {
