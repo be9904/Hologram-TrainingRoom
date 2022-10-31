@@ -48,7 +48,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rim_Light_Power: 1
-    - _ScanlinePosition: 10
+    - _ScanlinePosition: 9.2
     - _Scroll_Speed: 0.05
     m_Colors:
     - _GrainColor: {r: 1, g: 0.9474885, b: 0, a: 0}

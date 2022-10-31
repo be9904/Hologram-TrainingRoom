@@ -11,7 +11,12 @@ float _WireframeSmoothing;
 float _WireframeThickness;
 
 float3 GetAlbedoWithWireframe (Interpolators i) {
-    float3 albedo = GetAlbedo(i);
+    float3 albedo =
+        tex2D(_MainTex, i.uv.xy).rgb * UNITY_ACCESS_INSTANCED_PROP(_Color_arr, _Color).rgb;
+    #if defined (_DETAIL_ALBEDO_MAP)
+    float3 details = tex2D(_DetailTex, i.uv.zw) * unity_ColorSpaceDouble;
+    albedo = lerp(albedo, albedo * details, GetDetailMask(i));
+    #endif
     float3 barys;
     barys.xy = i.barycentricCoordinates;
     barys.z = 1 - barys.x - barys.y;
