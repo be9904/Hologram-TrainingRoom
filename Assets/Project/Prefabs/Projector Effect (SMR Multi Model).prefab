@@ -2474,8 +2474,8 @@ Transform:
   m_Children:
   - {fileID: 8132012693066324452}
   - {fileID: 7388442468281296785}
-  - {fileID: 8132012694792443168}
   - {fileID: 8132012693967660079}
+  - {fileID: 8132012694792443168}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2580,7 +2580,7 @@ VisualEffect:
         m_Overridden: 1
     m_Vector4f:
       m_Array:
-      - m_Value: {x: 3.9999995, y: 2.7643976, z: 0, w: 1}
+      - m_Value: {x: 11.984314, y: 8.282353, z: 0, w: 1}
         m_Name: LineColor
         m_Overridden: 1
     m_Uint:
@@ -2716,7 +2716,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8132012693376501849}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8132012694792443169
 GameObject:
@@ -2748,5 +2748,5 @@ Transform:
   m_Children:
   - {fileID: 8132012693478277977}
   m_Father: {fileID: 8132012693376501849}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

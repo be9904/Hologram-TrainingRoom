@@ -1390,7 +1390,7 @@
     },
     "m_PreviewData": {
         "serializedMesh": {
-            "m_SerializedMesh": "{\"mesh\":{\"fileID\":4493585093827132993,\"guid\":\"799dd70cf1c927745b5a7cb501c914cb\",\"type\":3}}",
+            "m_SerializedMesh": "{\"mesh\":{\"fileID\":2959467708922500008,\"guid\":\"9784308fd5c19a64b980a2dfa00b8a62\",\"type\":3}}",
             "m_Guid": ""
         },
         "preventRotation": false
@@ -7293,10 +7293,10 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 1.0,
+    "m_Value": 0.75,
     "m_FloatType": 1,
     "m_RangeValues": {
-        "x": 1.0,
+        "x": 0.10000000149011612,
         "y": 5.0
     }
 }
@@ -7655,7 +7655,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []

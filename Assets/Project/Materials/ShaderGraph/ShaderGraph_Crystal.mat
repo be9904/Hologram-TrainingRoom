@@ -21,13 +21,13 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Hologram_Texture:
-        m_Texture: {fileID: 2800000, guid: 3e2cd14e365482148a6b35520b5b6e20, type: 3}
+        m_Texture: {fileID: 2800000, guid: b96386465c6817349aa1fba9122d3951, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ScanlineTexture:
         m_Texture: {fileID: 2800000, guid: b96386465c6817349aa1fba9122d3951, type: 3}
-        m_Scale: {x: 1, y: 0.2}
-        m_Offset: {x: 0, y: 0.5}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 1.04}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,7 +42,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.1
+    - _Alpha: 0
     - _FlickerIntensity: 0.3
     - _GrainCutout: 0.9
     - _GrainScale: 0.2
@@ -50,11 +50,11 @@ Material:
     - _QueueOffset: 0
     - _Rim_Light_Power: 1
     - _ScanlinePosition: 10
-    - _Scroll_Speed: 0.05
+    - _Scroll_Speed: 0
     m_Colors:
     - _GrainColor: {r: 1, g: 0.9474885, b: 0, a: 0}
     - _HologramTiling: {r: 4, g: 4, b: 0, a: 0}
-    - _MainColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 0}
+    - _MainColor: {r: 2.828427, g: 0, b: 0.15973587, a: 1}
     - _ScanlineColor: {r: 5.992157, g: 2.133333, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6910687231230450234
