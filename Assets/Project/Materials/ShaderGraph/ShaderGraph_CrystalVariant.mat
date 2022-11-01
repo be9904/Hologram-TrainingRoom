@@ -54,7 +54,7 @@ Material:
     m_Colors:
     - _GrainColor: {r: 1, g: 0.9474885, b: 0, a: 0}
     - _HologramTiling: {r: 4, g: 4, b: 0, a: 0}
-    - _MainColor: {r: 1.7824347, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 1, g: 0.01865998, b: 0, a: 0}
     - _ScanlineColor: {r: 5.992157, g: 2.133333, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5597407699825052167
