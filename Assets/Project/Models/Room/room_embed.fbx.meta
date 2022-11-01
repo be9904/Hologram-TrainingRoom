@@ -3,7 +3,47 @@ guid: de5c8b8db90c87341ac76b642919ee76
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: b4ecf7cfb1788c545b115b384f1a2466, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light
+    second: {fileID: 2100000, guid: 101a2b6410863704ab161e7bdd20381b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 044f96d0d40ca2643a24e49bb19e456b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall outside
+    second: {fileID: 2100000, guid: bef737a9dfa1d9f4ab18399d744070be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_inside
+    second: {fileID: 2100000, guid: ad1f0c9b4d052c24d9ff81eea79bad5d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: inside_1
+    second: {fileID: 2800000, guid: 9dea0601298b5ee488fd23e5ced5e7b3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wall_inside
+    second: {fileID: 2800000, guid: a6952770361501849b6511ec93d7952f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wall_outside_comp
+    second: {fileID: 2800000, guid: 5e53bd60a079fe049b8adf1ab576fbc8, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -88,7 +128,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
