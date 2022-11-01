@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_superhot
+  m_Name: ShaderGraph_superhot
   m_Shader: {fileID: -6465566751694194690, guid: 14f04f0bf78f8c044a3828be46085767, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []

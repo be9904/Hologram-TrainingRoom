@@ -397,7 +397,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614583}
   - {fileID: 8926484042661615349}
   dataType: 0
-  capacity: 50
+  capacity: 129
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 1
@@ -562,7 +562,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614611}
   m_ExposedName: SkinnedMeshTransform
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 3
   m_Category: SMR
   m_Min:
     m_Type:
@@ -2019,7 +2019,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614784}
   m_ExposedName: LineColor
   m_Exposed: 1
-  m_Order: 1
+  m_Order: 2
   m_Category: Projection Lines
   m_Min:
     m_Type:
@@ -3213,7 +3213,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615344}
   m_ExposedName: ProjectorSource
   m_Exposed: 1
-  m_Order: 0
+  m_Order: 1
   m_Category: Projection Lines
   m_Min:
     m_Type:

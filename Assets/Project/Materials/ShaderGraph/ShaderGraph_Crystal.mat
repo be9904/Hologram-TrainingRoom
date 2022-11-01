@@ -42,13 +42,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Alpha: 0.1
     - _FlickerIntensity: 0.3
     - _GrainCutout: 0.9
     - _GrainScale: 0.2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rim_Light_Power: 1
-    - _ScanlinePosition: 9.5
+    - _ScanlinePosition: 10
     - _Scroll_Speed: 0.05
     m_Colors:
     - _GrainColor: {r: 1, g: 0.9474885, b: 0, a: 0}
