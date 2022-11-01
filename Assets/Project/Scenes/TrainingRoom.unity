@@ -3241,7 +3241,7 @@ VisualEffect:
         m_Overridden: 1
     m_Vector4f:
       m_Array:
-      - m_Value: {x: 5.992157, y: 4.1411767, z: 0, w: 1}
+      - m_Value: {x: 5.992157, y: 0.12130803, z: 0, w: 1}
         m_Name: LineColor
         m_Overridden: 1
     m_Uint:
@@ -6070,7 +6070,7 @@ VisualEffect:
         m_Overridden: 1
     m_Vector4f:
       m_Array:
-      - m_Value: {x: 5.992157, y: 4.1411767, z: 0, w: 1}
+      - m_Value: {x: 5.992157, y: 0.12130803, z: 0, w: 1}
         m_Name: LineColor
         m_Overridden: 1
     m_Uint:

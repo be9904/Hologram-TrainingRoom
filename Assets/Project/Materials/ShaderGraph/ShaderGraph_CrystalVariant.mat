@@ -42,7 +42,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.01
+    - _Alpha: 0.1
     - _FlickerIntensity: 0.4
     - _GrainCutout: 0.9
     - _GrainScale: 0.2
